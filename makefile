@@ -1,12 +1,12 @@
-TARGET = krishnamoorthynatarajanke_proj1.exe
-SRC = krishnamoorthynatarajanke_proj1.c
-INC = krishnamoorthynatarajanke_proj1.h
+TARGET = prod_cons.exe
+SRC = prod_cons.c
+INC = prod_cons.h
 CC = gcc
 CFLAGS = -pthread
 
 all: $(TARGET)
 
-krishnamoorthynatarajanke_proj1.exe: $(SRC) $(INC)
+prod_cons.exe: $(SRC) $(INC)
 	$(CC) -o $(TARGET) $(SRC) $(CFLAGS)
 
 .PHONY: clean
